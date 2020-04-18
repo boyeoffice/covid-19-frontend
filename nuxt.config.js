@@ -4,6 +4,9 @@ export default {
    ** Headers of the page
    */
   head: {
+    htmlAttrs: {
+      lang: 'en'
+    },
     title: "Covid-19 Estimator",
     meta: [
       { charset: "utf-8" },
@@ -21,7 +24,7 @@ export default {
         href:
           "https://fonts.googleapis.com/css?family=Montserrat:400,700,200"
       },
-      { rel: 'stylesheet', href: '/css/bootstrap.min.css' }
+      { rel: 'stylesheet', href: '/css/grid.css' }
     ]
   },
   /*

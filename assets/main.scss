@@ -1,23 +1,62 @@
 body {
-  // background: url(/bg.jpg);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.w-100 {
+  width: auto !important;
 }
 #__nuxt {
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
-  height: 100vh;
+  height: 100%;
+  width: 100%
+}
+input[type=text] {
+  padding: 15px 0 15px 15px;
+}
+select.form-control {
+  padding-left: 15px;
+}
+button {
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  line-height: 2;
+  font-weight: 100;
+  font-size: 15px;
 }
 .form {
-  color: #fff;
+  color: #444;
+  &-group, {
+    position: relative;
+    margin-bottom: 10px;
+    &:focus {
+      & label {
+        opacity: 0;
+      }
+    }
+    label {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.8571em;
+      left: 15px;
+      color: #454545;
+      opacity: 1;
+    }
+  }
   & .form-control {
-    border-color: rgba(255, 255, 255, 0.5);
-    border-radius: 14px;
+    height: 40px;
+    width: 100%;
+    border: #ccc 1px solid;
     transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
     line-height: normal;
     font-size: 0.8571em;
-    background-color: rgba(255, 255, 255, 0.1);
-    color:#FFFFFF;
+    background-color: #f6f6f6;
+    color:#454545;
     &::placeholder {
-      color: #ebebeb;
-      opacity: 1;
+      color: #454545;
+      opacity: 0;
     }
   }
 }
